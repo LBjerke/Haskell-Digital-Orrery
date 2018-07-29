@@ -1,7 +1,7 @@
 module VectorSpec where
 
 import           Test.Hspec
-import           Vector.Vector
+import           Vector.D3Vector
 
 spec = do
   describe "Vector add tests" $ do
