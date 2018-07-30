@@ -1,0 +1,3 @@
+- ignore: {name: "Parse error"}
+- ignore: {name: "Redundant void"}
+- ignore: {name: "Reduce duplication"}

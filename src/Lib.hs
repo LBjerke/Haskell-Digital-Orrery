@@ -4,6 +4,7 @@ module Lib
 
 import           Vector.D3Vector
 
+
 main :: IO ()
 main = do
   let vz = v3Add V3{ x = 1,y = 1,z = 1} V3{ x= 1,y = 2,z = 3}
