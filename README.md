@@ -1,4 +1,4 @@
-# Digital-Orrey
+# Digital-Orrery
 
 TODO:
 -Create the full leapfrog, euler, and predictor-corrector methods out of base modules
