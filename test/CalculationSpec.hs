@@ -5,7 +5,7 @@ import           Test.Hspec
 import           Vector.D3Vector
 spec = do
   describe "Calculate acceleration vector" $ do
-    let xs = getAccelerations V3{ x = 1,y = 1,z = 1} V3{ x= 1,y = 2,z = 3} [2.0,2.0]
+    let xs = getAccelerations (V3 1 1 1) (V3 1 2 3) [2.0,2.0]
     it "Acceleration vector x1 value" $ (x (xs!!0)) `shouldBe` 0.0
     it "Acceleration vector x2 value" $ (x (xs !! 1)) `shouldBe` 0.0
     it "Acceleration vector y1 value" $ (y (xs!!0)) `shouldBe`  1.1931658727938876 * 10 ^^(-11)
@@ -17,7 +17,7 @@ spec = do
     it "Gravitation Constant value" $ gravity `shouldBe` (6.67 * 10 ^^(-11))
 
   describe "Jerk" $ do
-    let xs = getJerks V3{ x = 1,y = 1,z = 1} V3{ x= 1,y = 2,z = 3} V3{ x = 10000000,y = 100,z = 10} V3{ x= 1000000,y = 200,z = 30} [1000.0,2000.0]
+    let xs = getJerks (V3 1 1 1) (V3 1 2 3) (V3 10000000 100 10) (V3 1000000 200 30) [1000.0,2000.0]
     it "Jerk vector x1 value" $ (x (xs!!0)) `shouldBe`  0.29829144
     it "Jerk vector x2 value" $ (x (xs !! 1)) `shouldBe` 2.9829144 * 10^^(-2)
     it "Jerk vector y1 value" $ (y (xs!!0)) `shouldBe`  ( 8.3521604) * 10^^(-7)
