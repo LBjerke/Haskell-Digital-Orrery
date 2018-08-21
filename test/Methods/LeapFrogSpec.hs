@@ -4,7 +4,6 @@ import           Methods.LeapFrog
 import           Test.Hspec
 import           Vector.D3Vector
 
-
 spec = do
   describe "LeapFrog Velocity" $ do
     let velocity = leapfrogVelocity (V3 10 10 10) (V3 10 10 10) 0.25
