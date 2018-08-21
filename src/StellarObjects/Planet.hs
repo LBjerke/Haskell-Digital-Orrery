@@ -12,7 +12,7 @@ data Planet = Planet
 
 showPlanet :: Planet -> String
 showPlanet (Planet name (V3 px py pz) (V3 vx vy vz) mass) =
-  ("name: " <> name <> ", x position: " <> show px <> ", y position: " <>
+  "name: " <> name <> ", x position: " <> show px <> ", y position: " <>
    show py <>
    ", z position: " <>
    show pz <>
@@ -23,7 +23,7 @@ showPlanet (Planet name (V3 px py pz) (V3 vx vy vz) mass) =
    ", z velocity: " <>
    show vz <>
    ", Mass: " <>
-   show mass)
+   show mass
 
 planetMass :: Planet -> Float
 planetMass (Planet name (V3 px py pz) (V3 vx vy vz) mass) = mass
